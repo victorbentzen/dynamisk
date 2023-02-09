@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.body {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+body {
+  margin-top: 1%;
+}
+
+.nav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav {
+  font-family: "Open Sans", sans-serif;
+  padding: 1%;
+}
+#forside a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav {
+  font-family: "Open Sans", sans-serif;
+  padding: 1%;
+}
+
+.logo-forside {
+  max-width: 15%;
+  max-height: 15%;
+  margin-left: 265px;
+}
+
+.logo {
+  max-width: 15%;
+  max-height: 15%;
+  display: block;
+  float: left;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 175%;
+  transform: translate(-50%, -50%);
+  background-color: darkcyan;
+  color: black;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  padding: 10px 100px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: darkcyan;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 8%;
+  font-size: 40px;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.categories a {
+  text-decoration: none;
+  padding: 2em;
+  color: black;
+  background-image: url(../images/categories.webp);
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.productlist {
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 405px));
+  gap: 2.5rem;
+}
+.productlist article {
+  margin-bottom: 1rem;
+}
+.productlist article {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4em;
+}
+.subtle {
+  color: grey;
+}
+p {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+h3 {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+}
+.link {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+.discounted {
+  display: flex;
+  justify-content: space-between;
+}
+.sale {
+  background-color: yellow;
+  padding: 2%;
+  margin-right: 15%;
+}
+
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background: grey;
+  color: white;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+.productlist article.soldOut img {
+  opacity: 0.3;
+}
+.productlist article > * {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+ol,
+ul {
+  padding-left: 2%;
+  margin-top: 8%;
+  margin-bottom: 1.563rem;
+}
+
+ol {
+  list-style: decimal outside;
+}
+
+.product main {
+  grid-template-columns: 1fr 310px;
+}
+
+.product main {
+  display: grid;
+}
+
+.breadcrumbs {
+  display: flex;
+  font-size: 0.8rem;
+  list-style-type: none;
+}
+
+.product .breadcrumbs {
+  grid-column: 1/-1;
+}
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.breadcrumbs a::after {
+  content: " > ";
+  font-size: 0.6rem;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: black;
+  -webkit-text-decoration-color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3em;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+.info {
+  margin-top: 1%;
+}
+#h3-info {
+  font-family: "Open Sans", sans-serif;
+}
+
+.box {
+  background: #d8d8d8;
+  color: #f1f1f1;
+  padding: 1%;
+  padding-left: 1%;
+  padding-bottom: 2rem;
+}
+
+#box-p {
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.discounted {
+  display: none;
+}
+
+.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discounted > p {
+  margin-bottom: 0;
+}
+
+.discounted p:last-child {
+  background: red;
+  padding: 0.2rem;
+}
+
+.newprice {
+  font-style: italic;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+
+.categories a:hover {
+  transform: scale(1.1);
+  opacity: 50%;
+}
+
+img.product-img {
+  max-width: 80%;
+}
+
+div.productlist {
+  margin-left: 4.8%;
+}
+
+p.percent {
+  margin-right: 20%;
+}
